@@ -1,0 +1,222 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{54BEAEF2-6A9A-48E1-8ED6-C043A1505AED}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Aplikasi_Geolistrik</RootNamespace>
+    <AssemblyName>Aplikasi_Geolistrik</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ILNumerics, Version=3.3.3.0, Culture=neutral, PublicKeyToken=e00823afcff9a03a, processorArchitecture=MSIL">
+      <HintPath>..\packages\ILNumerics.3.3.3.0\lib\ILNumerics.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="About.Designer.cs">
+      <DependentUpon>About.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dipole_Imaging.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dipole_Imaging.Designer.cs">
+      <DependentUpon>Dipole_Imaging.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dipole_Options.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dipole_Options.Designer.cs">
+      <DependentUpon>Dipole_Options.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dipole_View.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dipole_View.Designer.cs">
+      <DependentUpon>Dipole_View.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SplashScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SplashScreen.Designer.cs">
+      <DependentUpon>SplashScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VES_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VES_Form.Designer.cs">
+      <DependentUpon>VES_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VES_Options.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VES_Options.Designer.cs">
+      <DependentUpon>VES_Options.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main_Form.Designer.cs">
+      <DependentUpon>Main_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="VES_View.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VES_View.Designer.cs">
+      <DependentUpon>VES_View.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Wenner1D_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Wenner1D_Form.Designer.cs">
+      <DependentUpon>Wenner1D_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Wenner1D_Options.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Wenner1D_Options.Designer.cs">
+      <DependentUpon>Wenner1D_Options.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Wenner2D_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Wenner2D_Form.Designer.cs">
+      <DependentUpon>Wenner2D_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Wenner2D_Option.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Wenner2D_Option.Designer.cs">
+      <DependentUpon>Wenner2D_Option.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Wenner_View.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Wenner_View.Designer.cs">
+      <DependentUpon>Wenner_View.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="About.resx">
+      <DependentUpon>About.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dipole_Imaging.resx">
+      <DependentUpon>Dipole_Imaging.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dipole_Options.resx">
+      <DependentUpon>Dipole_Options.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dipole_View.resx">
+      <DependentUpon>Dipole_View.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SplashScreen.resx">
+      <DependentUpon>SplashScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VES_Form.resx">
+      <DependentUpon>VES_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VES_Options.resx">
+      <DependentUpon>VES_Options.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main_Form.resx">
+      <DependentUpon>Main_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="VES_View.resx">
+      <DependentUpon>VES_View.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wenner1D_Form.resx">
+      <DependentUpon>Wenner1D_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wenner1D_Options.resx">
+      <DependentUpon>Wenner1D_Options.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wenner2D_Form.resx">
+      <DependentUpon>Wenner2D_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wenner2D_Option.resx">
+      <DependentUpon>Wenner2D_Option.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wenner_View.resx">
+      <DependentUpon>Wenner_View.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin32\libiomp5md.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="bin32\mkl_custom.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="bin64\libiomp5md.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="bin64\mkl_custom.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
